@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Button, Text } from 'react-bootstrap';
 import logo from './logo.svg';
 import './App.css';
-import Top from './Top/Top';
+import Cert from './Cert/Cert';
 
 
 
@@ -17,14 +17,18 @@ function App() {
       <nav className = 'links'>
 
 <ul>
-<li className = 'sitemain'><a>TerrenceSite.com</a></li>
-<li><a>Home</a></li>
-<li><a>Certifications</a></li>
-<li><a>GitHub</a></li>
+<li className = 'sitemain'><a className = 'terrence'>Terrence's Portfolio</a></li>
+<li><a className = 'topright'>Home</a></li>
+<li><a className = 'topright'>Certifications</a></li>
+<li><a className = 'topright'>GitHub</a></li>
 </ul>
 </nav>
       </header>
-      <h1>Test</h1>
+      <br/>
+
+    <Cert name = 'AWS' />
+    <Cert name = 'Azure'/>
+
     </div>
   );
 }
