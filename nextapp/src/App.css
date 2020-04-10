@@ -67,6 +67,8 @@ font-family: 'Patua One', cursive;
   padding: 12px;
 }
 
+
+
 .navbar {
   margin-top: 11px;
 }
@@ -89,9 +91,20 @@ font-family: 'Patua One', cursive;
   .topright {
     display: none;
   }
+  .links li {
+    padding: 1px;
+  }
   .terrence {
-    font-size: 30px;
+    font-size: 40px;
+    padding: 10px;
+
 
   }
 
+}
+
+@media (max-width: 620px) {
+  .terrence {
+    display: none;
+  }
 }

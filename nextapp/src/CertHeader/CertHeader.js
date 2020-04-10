@@ -13,7 +13,8 @@ const CertHeader = (props) => {
   return (
 
 <div className = 'CertHeader'>
-<h1>Certifications</h1>
+<h1>{props.name}</h1>
+<br/>
 </div>
 )
 }

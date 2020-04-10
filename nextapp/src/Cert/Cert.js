@@ -18,7 +18,9 @@ const Cert = (props) => {
 <p>{props.paragraph}</p>
 <button className = 'cardbtn'>Verify Here</button>
 </nav>
+<br/>
 </div>
+
 
 )
 }

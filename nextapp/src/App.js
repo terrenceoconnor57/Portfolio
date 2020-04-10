@@ -28,21 +28,29 @@ function App() {
 
 <ul>
 <li className = 'sitemain'><a className = 'terrence' href = '/'>TO</a></li>
-<BurgerIcon />
 <li className = 'navbar'><a className = 'topright' href = '/'>Home</a></li>
+<BurgerIcon className = 'padburg'/>
+
 <li className = 'navbar'><a className = 'topright' href = '/Cert/Cert' >Certifications</a></li>
 <li className = 'navbar'><a className = 'topright' href = 'https://github.com/terrenceoconnor57'>GitHub</a></li>
 </ul>
 </nav>
+
       </header>
+
       <br/>
 
 <Route path = "/" exact component = {BodyInfo} />
-<Route path = "/Cert/Cert" exact component = {CertHeader} />
+<Route exact path="/Cert/Cert" component={() => <CertHeader name={`Achieved`}
+/>} />
 <Route exact path="/Cert/Cert" component={() => <Cert name={`AWS`}
 paragraph = {'AWS Certified Solutions Architect'}/>} />
 <Route exact path="/Cert/Cert" component={() => <Cert name={`Azure`}
 paragraph = {'Azure Fundamentals Certified'}/>} />
+<Route exact path="/Cert/Cert" component={() => <CertHeader name={`Working On`}
+/>} />
+<Route exact path="/Cert/Cert" component={() => <Cert name={`AWS`}
+paragraph = {'Developer Certified'}/>} />
 
 <br/>
 <br/>
