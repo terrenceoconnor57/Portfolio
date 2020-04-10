@@ -1,0 +1,38 @@
+.burgside {
+  height: 100%;
+  background: #707070;
+  box-shadow: 0px 0 5px 5px black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  max-width: 300px;
+  z-index: 200;
+}
+
+
+.sidelist {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+.sidelist li {
+  text-align: left;
+  margin-left: -30px;
+}
+
+.sidecontent {
+  text-decoration: none;
+  font-family: 'Patua One', cursive;
+  color: white;
+  font-size: 25px;
+  text-align: left;
+}
+
+.sidecontent:hover {
+  color: white;
+}

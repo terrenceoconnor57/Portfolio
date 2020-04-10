@@ -12,7 +12,7 @@ import {Route} from 'react-router-dom';
 const BurgerIcon = (props) => {
   return (
 
-<div className = 'burger'>
+<div onClick={props.burgerClickOn} className = 'burger'>
 <p className = 'burgline'>Burg</p>
 <p className = 'burgline'>Burg</p>
 <p className = 'burgline'>Burg</p>

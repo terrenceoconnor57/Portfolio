@@ -7,7 +7,8 @@
   height: 4px;
   color: transparent;
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: 0px;
+  padding-right: 0;
   cursor: pointer;
   padding-top: -5px;
 
@@ -18,5 +19,14 @@
   .burger {
     display: none;
   }
+
+
+}
+
+@media (min-width: 375px) {
+  .burgline {
+    margin-right: -5px;
+  }
+
 
 }

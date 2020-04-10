@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
@@ -7,6 +7,8 @@ import CertHeader from './CertHeader/CertHeader';
 import BodyInfo from './BodyInfo/BodyInfo';
 import BottomApp from './BottomApp/BottomApp';
 import BurgerIcon from './BurgerIcon/BurgerIcon';
+import SideBurger from './SideBurger/SideBurger';
+import BackDrop from './BackDrop/BackDrop';
 import { ScrollTo } from "react-scroll-to";
 
 
@@ -17,7 +19,30 @@ import { ScrollTo } from "react-scroll-to";
 
 
 
-function App() {
+class App extends Component {
+  state = {
+    sideBurgerOpen: false
+  };
+
+
+burgerClickHandler = () => {
+  this. setState((prevState)=> {
+    return {sideBurgerOpen: !prevState.sideBurgerOpen};
+  });
+};
+
+backdropClickHandler = () => {
+  this.setState({sideBurgerOpen: false});
+};
+
+  render() {
+    let sideburger;
+    let backdrop;
+
+    if (this.state.sideBurgerOpen){
+      sideburger = <SideBurger />
+      backdrop = <BackDrop backdropClickOn = {this.backdropClickHandler}/>
+    }
   return (
     <BrowserRouter>
     <div className="App">
@@ -29,10 +54,11 @@ function App() {
 <ul>
 <li className = 'sitemain'><a className = 'terrence' href = '/'>TO</a></li>
 <li className = 'navbar'><a className = 'topright' href = '/'>Home</a></li>
-<BurgerIcon className = 'padburg'/>
-
+<BurgerIcon burgerClickOn = {this.burgerClickHandler} />
 <li className = 'navbar'><a className = 'topright' href = '/Cert/Cert' >Certifications</a></li>
 <li className = 'navbar'><a className = 'topright' href = 'https://github.com/terrenceoconnor57'>GitHub</a></li>
+{sideburger}
+{backdrop}
 </ul>
 </nav>
 
@@ -73,6 +99,7 @@ paragraph = {'Developer Certified'}/>} />
 
     </BrowserRouter>
   );
+}
 }
 
 export default App;
