@@ -1,0 +1,58 @@
+.bottom {
+  background: #707070;
+
+
+}
+
+
+
+.btmhead {
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-family: 'Patua One', cursive;
+  font-size: 70px;
+  padding-top: 70px;
+}
+
+.btmp {
+  width: 500px;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.me {
+  width: 300px;
+  height: 300px;
+  border: none;
+  border-radius: 80%;
+  background-image: url('mypicture.png');
+  background-position: center;
+  background-size: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btmpad {
+  padding-bottom: 100px;
+}
+
+@media (max-width: 480px) {
+  .bottom {
+    width: 414px;
+  }
+  .me {
+    width: 150px;
+    height: 150px;
+    background-size: 200px;
+  }
+  .btmp {
+    width: 200px;
+  }
+  .btmhead {
+    font-size: 35px;
+  }
+}

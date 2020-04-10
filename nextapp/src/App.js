@@ -5,6 +5,15 @@ import './App.css';
 import Cert from './Cert/Cert';
 import CertHeader from './CertHeader/CertHeader';
 import BodyInfo from './BodyInfo/BodyInfo';
+import BottomApp from './BottomApp/BottomApp';
+import BurgerIcon from './BurgerIcon/BurgerIcon';
+import { ScrollTo } from "react-scroll-to";
+
+
+
+
+
+
 
 
 
@@ -19,6 +28,7 @@ function App() {
 
 <ul>
 <li className = 'sitemain'><a className = 'terrence' href = '/'>TO</a></li>
+<BurgerIcon />
 <li className = 'navbar'><a className = 'topright' href = '/'>Home</a></li>
 <li className = 'navbar'><a className = 'topright' href = '/Cert/Cert' >Certifications</a></li>
 <li className = 'navbar'><a className = 'topright' href = 'https://github.com/terrenceoconnor57'>GitHub</a></li>
@@ -47,6 +57,9 @@ paragraph = {'Azure Fundamentals Certified'}/>} />
 <br/>
 <br/>
 <br/>
+<Route path = "/" exact component = {BottomApp} />
+
+
 
     </div>
 
