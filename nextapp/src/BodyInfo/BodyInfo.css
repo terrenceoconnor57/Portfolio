@@ -1,0 +1,13 @@
+.bodyinfo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  margin-top: 10%;
+  border-radius: 10px;
+}
+
+.bodyinfop {
+  padding: 30px;
+  font-family: 'Patua One', cursive;
+  font-size: 90px;
+}
