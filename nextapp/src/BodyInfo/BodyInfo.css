@@ -1,13 +1,41 @@
 .bodyinfo {
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 50%;
   margin-top: 10%;
   border-radius: 10px;
 }
 
 .bodyinfop {
-  padding: 30px;
+
   font-family: 'Patua One', cursive;
   font-size: 90px;
+}
+
+.spec {
+  color: white;
+  font-family: 'Patua One', cursive;
+  font-size: 25px;
+  padding: none;
+  margin: none;
+}
+
+.browse {
+  font-family: 'Roboto Slab', serif;
+  width: 120px;
+  height: 40px;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  font-size: 20px;
+}
+
+.browse:hover {
+  border: 2px solid white;
+}
+
+@media (max-width: 870px) {
+  .bodyinfop {
+    font-size: 50px;
+  }
 }

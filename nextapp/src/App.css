@@ -27,6 +27,9 @@
   font-family: 'Patua One', cursive;
     font-size: 40px;
     color: white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    padding: 10px;
 }
 
 .terrence:hover {
@@ -36,7 +39,8 @@
 
 .topright:hover {
   text-decoration: none;
-  color: blue;
+  color: white;
+  border-bottom: 3px solid white;
 }
 
 .topright {
@@ -44,10 +48,12 @@ font-family: 'Patua One', cursive;
   font-size: 30px;
   color: white;
 
+
 }
 
 .links ul {
  text-align: right;
+ margin-right: 15px;
 
 
 }

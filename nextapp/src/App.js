@@ -18,7 +18,7 @@ function App() {
       <nav className = 'links'>
 
 <ul>
-<li className = 'sitemain'><a className = 'terrence' href = '/'>Terrence O'Connor</a></li>
+<li className = 'sitemain'><a className = 'terrence' href = '/'>TO</a></li>
 <li className = 'navbar'><a className = 'topright' href = '/'>Home</a></li>
 <li className = 'navbar'><a className = 'topright' href = '/Cert/Cert' >Certifications</a></li>
 <li className = 'navbar'><a className = 'topright' href = 'https://github.com/terrenceoconnor57'>GitHub</a></li>
@@ -47,9 +47,7 @@ paragraph = {'Azure Fundamentals Certified'}/>} />
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
+
     </div>
 
     </BrowserRouter>
