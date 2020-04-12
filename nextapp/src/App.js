@@ -57,6 +57,7 @@ backdropClickHandler = () => {
 <BurgerIcon burgerClickOn = {this.burgerClickHandler} />
 <li className = 'navbar'><a className = 'topright' href = '/Cert/Cert' >Certifications</a></li>
 <li className = 'navbar'><a className = 'topright' href = 'https://github.com/terrenceoconnor57'>GitHub</a></li>
+<li className = 'navbar'><a className = 'topright' href = 'https://www.linkedin.com/in/terrencewoconnor/'>LinkedIn</a></li>
 {sideburger}
 {backdrop}
 </ul>
@@ -77,21 +78,21 @@ paragraph = {'Azure Fundamentals Certified'}/>} />
 />} />
 <Route exact path="/Cert/Cert" component={() => <Cert name={`AWS`}
 paragraph = {'Developer Certified'}/>} />
+<br/>
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<Route path = "/" exact component = {BottomApp} />
+
+<Route exact path="/Cert/Cert" component={() => <BottomApp title={`Why Certifications?`}
+paragraph = {'I believe that certifications...'}/>} />
+
+<Route exact path="/" component={() => <BottomApp title={`About Me`}
+paragraph = {'Thanks for visiting my site! My name is Terrence O’Connor and I am an IT Specialist/Developer.'}
+paragraph2 = {'I graduated from Montclair State University in December of 2018 with a bachelors degree in Information Technology. Since then, I have been working in a technical support/operations role at Ferring Pharmaceuticals for over a year.'}
+paragraph3 = {'In my free time I have studied to earn several different IT certifications as you will see browsing my site. I have also learned to develop and deploy projects with AWS and React.js (which I created this site with from scratch).'}
+paragraph4 = {'Thanks again for visiting!'}
+paragraph5 = {'-Terrence'}/>} />
+
+
+
 
 
 

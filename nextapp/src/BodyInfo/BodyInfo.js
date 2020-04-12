@@ -20,6 +20,10 @@ const BodyInfo = (props) => {
 <button className = 'browse' onClick={() => scroll({y: 1000, smooth: true })}>About Me</button>
 )}
 </ScrollTo>
+<br className = 'break'/>
+
+
+
 </div>
 
 )

@@ -14,12 +14,12 @@ const BottomApp = (props) => {
 
 <div className = 'bottom'>
 <nav className = 'left'>
-<h1 className = 'btmhead'>About Me</h1>
-<p className = 'btmp'>The Material Design color system helps
- you apply color to your UI in a meaningful way. In this system,
-  you select a primary and a secondary color to represent your brand.
-   Dark and light variants of each color can then be applied to your
-   UI in different ways.</p>
+<h1 className = 'btmhead'>{props.title}</h1>
+<p className = 'btmp'>{props.paragraph}</p>
+<p className = 'btmp'>{props.paragraph2}</p>
+<p className = 'btmp'>{props.paragraph3}</p>
+<p className = 'btmp'>{props.paragraph4}</p>
+<p className = 'btmp'>{props.paragraph5}</p>
    </nav>
    <div className = 'btmpad'>
    <nav className = 'me'  />

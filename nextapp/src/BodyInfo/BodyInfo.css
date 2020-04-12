@@ -28,14 +28,33 @@
   border: 1px solid white;
   color: white;
   font-size: 20px;
+  margin-bottom: 300px;
+}
+
+.browse:focus {
+  outline: none;
 }
 
 .browse:hover {
   border: 2px solid white;
 }
 
+
 @media (max-width: 870px) {
   .bodyinfop {
     font-size: 50px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .bodyinfo {
+    font-size: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .browse {
+   .margin-bottom: 200px;
   }
 }
