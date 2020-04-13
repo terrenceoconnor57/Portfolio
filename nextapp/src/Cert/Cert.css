@@ -43,18 +43,31 @@
 
 }
 
-.cardbtn {
-  border-radius: 10px;
+
+
+.carda {
+  cursor: pointer;
+  border-radius: 5px;
   border: none;
-  box-shadow: 2px 2px 5px;
+  box-shadow: 2px 2px 5px black;
   background: #67d3e6;
   margin-bottom: 10px;
   margin-top: 10px;
+  color: white;
+  width: 110px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 20px;
+  font-family: 'Baloo Paaji 2', cursive;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
-.cardbtn:hover {
-
+.carda:hover {
+  color: black;
 }
+
+
 
 @media (max-width: 670px) {
   .cards {

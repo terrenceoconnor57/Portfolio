@@ -19,6 +19,7 @@ const SideBurger = (props) => {
 
 <li><a className ='sidecontent' href = '/Cert/Cert' >Certifications</a></li>
 <li><a className ='sidecontent' href = 'https://github.com/terrenceoconnor57'>GitHub</a></li>
+<li><a className ='sidecontent' href = 'https://www.linkedin.com/in/terrencewoconnor/'>LinkedIn</a></li>
 </ul>
 </nav>
 

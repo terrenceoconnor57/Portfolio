@@ -17,7 +17,7 @@ const BodyInfo = (props) => {
 <p className = 'spec'>IT Specialist/Developer</p>
 <ScrollTo>
 {({ scroll }) => (
-<button className = 'browse' onClick={() => scroll({y: 1000, smooth: true })}>About Me</button>
+<button className = 'browse' onClick={() => scroll({y: 750, smooth: true })}>About Me</button>
 )}
 </ScrollTo>
 <br className = 'break'/>

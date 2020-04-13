@@ -16,7 +16,7 @@ const Cert = (props) => {
 <nav className = 'cards'>
 <h1>{props.name}</h1>
 <p>{props.paragraph}</p>
-<button className = 'cardbtn'>Verify Here</button>
+<div className = 'carda' onClick={()=> window.open(props.Webname)}>{props.verify}</div>
 </nav>
 <br/>
 </div>

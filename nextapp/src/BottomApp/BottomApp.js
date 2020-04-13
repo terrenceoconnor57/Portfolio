@@ -22,7 +22,7 @@ const BottomApp = (props) => {
 <p className = 'btmp'>{props.paragraph5}</p>
    </nav>
    <div className = 'btmpad'>
-   <nav className = 'me'  />
+   <nav className = 'me' />
    </div>
 </div>
 

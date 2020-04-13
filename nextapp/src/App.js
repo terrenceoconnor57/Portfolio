@@ -71,18 +71,26 @@ backdropClickHandler = () => {
 <Route exact path="/Cert/Cert" component={() => <CertHeader name={`Achieved`}
 />} />
 <Route exact path="/Cert/Cert" component={() => <Cert name={`AWS`}
-paragraph = {'AWS Certified Solutions Architect'}/>} />
+paragraph = {'AWS Certified Solutions Architect'}
+verify = {"Verify Here"}
+Webname = 'https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2020-01-11&ci=AWS01106688'/>} />
 <Route exact path="/Cert/Cert" component={() => <Cert name={`Azure`}
-paragraph = {'Azure Fundamentals Certified'}/>} />
+paragraph = {'Azure Fundamentals Certified'}
+verify = {"Verify Here"}
+Webname = 'https://www.youracclaim.com/badges/8ddf9006-fdda-4a8e-b7c6-b1d2d1b03d94'/>} />
 <Route exact path="/Cert/Cert" component={() => <CertHeader name={`Working On`}
 />} />
 <Route exact path="/Cert/Cert" component={() => <Cert name={`AWS`}
-paragraph = {'Developer Certified'}/>} />
+paragraph = {'Developer Certified'}
+/>} />
 <br/>
 
 
 <Route exact path="/Cert/Cert" component={() => <BottomApp title={`Why Certifications?`}
-paragraph = {'I believe that certifications...'}/>} />
+paragraph = {'Certifications played a key role in providing more motivation for me to learn and study up to date technologies after graduating college. I believe that there are many people who graduate college without a real idea of what they would like to do.'}
+paragraph2 = {'After a few months of working a technical support role, I decided that it was time to take initiative and learn more on my own. I did a lot of research on what certifications are in demand while trying to find something that sparked my interest.'}
+paragraph3 = {'In all of my research, I quickly found that cloud computing was very interesting to me. I then decided to spend the next few months studying to pass the AWS exam. Soon after that I passed the Azure exam, and I am now working on another AWS certification.'}
+paragraph4 = {'-Terrence'}/>} />
 
 <Route exact path="/" component={() => <BottomApp title={`About Me`}
 paragraph = {'Thanks for visiting my site! My name is Terrence O’Connor and I am an IT Specialist/Developer.'}
