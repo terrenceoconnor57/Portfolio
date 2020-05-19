@@ -9,6 +9,7 @@ import BottomApp from './BottomApp/BottomApp';
 import BurgerIcon from './BurgerIcon/BurgerIcon';
 import SideBurger from './SideBurger/SideBurger';
 import BackDrop from './BackDrop/BackDrop';
+import Projects from './Projects/Projects';
 import { ScrollTo } from "react-scroll-to";
 
 
@@ -56,6 +57,7 @@ backdropClickHandler = () => {
 <li className = 'navbar'><a className = 'topright' href = '/'>Home</a></li>
 <BurgerIcon burgerClickOn = {this.burgerClickHandler} />
 <li className = 'navbar'><a className = 'topright' href = '/Cert/Cert' >Certifications</a></li>
+<li className = 'navbar'><a className = 'topright' href = '/Projects/Projects'>Projects</a></li>
 <li className = 'navbar'><a className = 'topright' href = 'https://github.com/terrenceoconnor57'>GitHub</a></li>
 <li className = 'navbar'><a className = 'topright' href = 'https://www.linkedin.com/in/terrencewoconnor/'>LinkedIn</a></li>
 {sideburger}
@@ -66,6 +68,7 @@ backdropClickHandler = () => {
       </header>
 
       <br/>
+
 
 <Route path = "/" exact component = {BodyInfo} />
 <Route exact path="/Cert/Cert" component={() => <CertHeader name={`Achieved`}
@@ -83,6 +86,8 @@ Webname = 'https://www.youracclaim.com/badges/8ddf9006-fdda-4a8e-b7c6-b1d2d1b03d
 <Route exact path="/Cert/Cert" component={() => <Cert name={`AWS`}
 paragraph = {'Developer Certified'}
 />} />
+
+<Route path ="/Projects/Projects" exact component={Projects} />
 <br/>
 
 
